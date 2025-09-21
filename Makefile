@@ -2,13 +2,13 @@
 CXX = g++
 
 #flags
-CXXFLAGS = -Wall -Wextra -std=c++11
+CXXFLAGS = -Wall -Wextra -std=c++17
 
 #nome do programa
 TARGET = main
 
 #aquivo fonte
-SOURCES = main.cpp
+SOURCES = main.cpp GrafoNaoDirigido.cpp
 
 #arquivos objeto
 #OBJECTS = $(SOURCES:.cpp=.o)
