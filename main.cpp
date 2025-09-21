@@ -3,22 +3,23 @@
 #include <iostream>
 
 int main() {
-    std::string arquivo = "grafo.txt";
-
-    GrafoNaoDirigido grafo = GrafoNaoDirigido(arquivo);
-
+    GrafoNaoDirigido grafoBfs = GrafoNaoDirigido("grafos_A1/grafo_bfs.txt");
+    GrafoNaoDirigido grafoEuleriano = GrafoNaoDirigido("grafos_A1/grafo_euleriano.txt");
+    GrafoNaoDirigido grafoDijkstra = GrafoNaoDirigido("grafos_A1/grafo_dijkstra.txt");
+    GrafoNaoDirigido grafoFloyMarshall = GrafoNaoDirigido("grafos_A1/grafo_floydWarshall.txt");
+    
     std::cout << "===== TESTE BFS =====" << std::endl;
-    buscaEmLargura(arquivo, 1); // começa no vértice 1
+    buscaEmLargura("grafos_A1/grafo_bfs.txt", 1); // começa no vértice 1
 
     std::cout << "\n===== TESTE CICLO EULERIANO =====" << std::endl;
-    GrafoNaoDirigido g(arquivo);
+    GrafoNaoDirigido g(grafoEuleriano);
     cicloEuleriano(g);
 
     std::cout << "\n===== TESTE DIJKSTRA =====" << std::endl;
-    dijkstra(grafo, 1); // origem = vértice 1
+    dijkstra(grafoDijkstra, 1); // origem = vértice 1
 
     std::cout << "\n===== TESTE FLOYD-WARSHALL =====" << std::endl;
-    floydWarshall(grafo);
+    floydWarshall(grafoFloyMarshall);
 
     return 0;
 }
