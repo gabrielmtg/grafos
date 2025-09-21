@@ -19,10 +19,10 @@ int main() {
     cicloEuleriano(g);
 
     std::cout << "\n===== TESTE DIJKSTRA =====" << std::endl;
-    dijkstra(grafoDijkstra, 1); // origem = vértice 1
+    dijkstra("grafos_A1/grafo_dijkstra.txt", 1); // origem = vértice 1
 
     std::cout << "\n===== TESTE FLOYD-WARSHALL =====" << std::endl;
-    floydWarshall(grafoFloyMarshall);
+    floydWarshall("grafos_A1/grafo_floydWarshall.txt");
 
     return 0;
 }

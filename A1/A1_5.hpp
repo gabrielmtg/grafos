@@ -1,7 +1,8 @@
 #include "../GrafoNaoDirigido.hpp"
 #include <vector>
 
-void floydWarshall(const GrafoNaoDirigido& grafo) {
+void floydWarshall(std::string arquivo) {
+    GrafoNaoDirigido grafo = GrafoNaoDirigido(arquivo);
     int n = grafo.qtdVertices();
     if (n == 0) {
         return; // Grafo vazio, não faz nada.
