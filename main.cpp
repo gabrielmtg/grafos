@@ -1,5 +1,8 @@
 #include "GrafoNaoDirigido.hpp"
-#include "AlgoritmosA1.hpp"
+#include "A1/A1_2.hpp"
+#include "A1/A1_3.hpp"
+#include "A1/A1_4.hpp"
+#include "A1/A1_5.hpp"
 #include <iostream>
 
 int main() {
