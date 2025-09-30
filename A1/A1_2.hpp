@@ -1,4 +1,4 @@
-#include "../GrafoNaoDirigido.hpp"
+#include "../grafo_nao_dirigido/GrafoNaoDirigido.hpp"
 #include <map>
 #include <queue>
 #include <vector>

@@ -1,4 +1,4 @@
-#include "../GrafoNaoDirigido.hpp"
+#include "../grafo_nao_dirigido/GrafoNaoDirigido.hpp"
 #include <vector>
 
 void dijkstra(std::string arquivo, int origem) {
